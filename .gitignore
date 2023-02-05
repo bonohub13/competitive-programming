@@ -1,2 +1,4 @@
 /target
+/lib/competetive_rs/target
+/lib/logger/target
 /log
