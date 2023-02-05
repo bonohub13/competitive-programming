@@ -36,13 +36,20 @@ fn main() -> Result<(), comp_rs::modes::ErrorState> {
         }
     }
 
-    match 0 {
+    match 1 {
         0 => {
             // https://atcoder.jp/contests/abc288/tasks/abc288_a
             let mut inputs: Vec<[i64; 2]> = vec![];
 
             comp_rs::prob_abc288_a::read_user_input(&mut inputs, &mode)?;
             comp_rs::prob_abc288_a::check_ans(&inputs);
+        }
+        1 => {
+            // https://atcoder.jp/contests/abc288/tasks/abc288_b
+            let mut inputs: Vec<String> = vec![];
+
+            comp_rs::prob_abc288_b::read_user_input(&mut inputs)?;
+            comp_rs::prob_abc288_b::check_ans(&inputs);
         }
         _ => (),
     }
